@@ -11,6 +11,7 @@ ReactBoards.HomePage = ReactMeteor.createClass
 
       <h2>Things Done</h2>
       <ul>
+        <li>CoffeeScript + JSX</li>
         <li>integrate Blaze templates in React components (accounts-ui)</li>
         <li>router</li>
         <li>drag and drop with jQueryUI (vertical and horizontal scroll fixes)</li>

@@ -4,6 +4,7 @@ This is just a test app to see what I can do with React + Meteor
 
 # Things done
 
+- coffescript + JSX
 - integrate Blaze templates in React components (accounts-ui)
 - router
 - drag and drop with jQueryUI (vertical and horizontal scroll fixes)
