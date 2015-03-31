@@ -1,0 +1,19 @@
+@mixin box-shadow($shadow...)
+  -webkit-box-shadow: $shadow
+          box-shadow: $shadow
+
+textarea, input
+  &.unstyled
+    border: none
+    min-height: 20px
+    height: 20px
+    height: 0px
+    padding: 0px
+    padding-left: 0px
+    resize: none!important
+    background-color: transparent
+    +box-shadow(none!important)
+    outline: none
+    &:focus
+      +box-shadow(none!important)
+      outline: none

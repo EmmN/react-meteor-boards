@@ -1,0 +1,22 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+reactjs:react
+jhartma:cjsx
+twbs:bootstrap
+accounts-password
+coffeescript
+fourseven:scss
+ian:accounts-ui-bootstrap-3
+fortawesome:fontawesome
+stevezhu:lodash
+mquandalle:bower
+reywood:publish-composite
+ground:db
+accounts-facebook
+service-configuration
+accounts-google

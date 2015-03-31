@@ -1,0 +1,16 @@
+# TO CONFIGURE GOOGLE AND FACEBOOK
+
+ServiceConfiguration.configurations.remove service: 'google'
+ServiceConfiguration.configurations.insert
+  service    : 'google'
+  loginStyle : 'popup'
+  clientId   : 'CLIENT_ID'
+  secret     : 'CLIENT_SECRET'
+
+
+ServiceConfiguration.configurations.remove service: 'facebook'
+ServiceConfiguration.configurations.insert
+  service    : 'facebook'
+  loginStyle : 'popup'
+  appId      : "APP_ID"
+  secret     : "APP_SECRET"

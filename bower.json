@@ -1,0 +1,15 @@
+{
+  "name": "react-meteor-board",
+  "version": "0.0.1",
+  "dependencies": {
+    "react-router": "~0.13.2",
+    "react-bootstrap": "~0.18.0",
+    "classnames": "~1.1.4",
+    "jquery-ui": "~1.11.4"
+  },
+  "ignoredDependencies": [
+    "react",
+    "jquery"
+  ],
+  "private": true
+}

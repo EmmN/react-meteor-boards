@@ -1,0 +1,37 @@
+$maxColumns: 20
+$boardPadding: 0
+$listMargin: 5
+$listWidth: 300
+$borderColor: #dedede
+
+@mixin board-content-size($listNo)
+  min-width: 100%
+  width: ($listWidth * $listNo + $boardPadding * 2 + $listMargin * $listNo) * 1px
+
+@for $i from 1 through $maxColumns
+  .board-content-#{$i}
+    +board-content-size($i)
+
+.board-content
+  overflow-y: hidden
+  .list-container
+    width: $listWidth * 1px
+    margin-right: $listMargin * 1px
+    border-right: 1px solid $borderColor
+    padding-right: 1px
+    float: left
+    &:last-child
+      margin-right: 0px
+      border-right: none
+
+.board-container
+  width: 100%
+  overflow-x: auto
+  overflow-y: hidden
+
+.board-header
+  margin-top: 0px
+  margin-bottom: 5px
+  padding-top: 10px
+  padding-bottom: 10px
+  border-bottom: 1px solid $borderColor

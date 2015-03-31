@@ -1,0 +1,15 @@
+$scrollbarSize: 8
+$gray-lighter: #dedede
+
+.visible-scrollbars
+  &::-webkit-scrollbar
+    -webkit-appearance: none
+    width: $scrollbarSize * 1px
+    height: $scrollbarSize * 1px
+    background-color: $gray-lighter
+    border-radius: 5px
+
+  &::-webkit-scrollbar-thumb
+    background-color: darken($gray-lighter, 5%)
+    border: none
+    border-radius: 5px
