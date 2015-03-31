@@ -1,6 +1,6 @@
 ReactBoards.BoardPage = ReactMeteor.createClass
   render: ->
-    return <h2>404 Not Found</h2> unless @state.board
+    return <div /> unless @state.board
 
     Link            = ReactRouter.Link
     List            = ReactBoards.List
