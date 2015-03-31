@@ -18,5 +18,6 @@ ReactBoards.HomePage = ReactMeteor.createClass
         <li>three way binding on input / textarea (not sure it's a good solution)</li>
       </ul>
 
+      <h2>Demo</h2>
       <p><a href="https://github.com/EmmN/react-meteor-boards">https://github.com/EmmN/react-meteor-boards</a></p>
     </div>
