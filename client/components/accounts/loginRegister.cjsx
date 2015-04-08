@@ -6,13 +6,11 @@ ReactBoards.LoginRegister = ReactMeteor.createClass
     if @state.form == 'login'
       <div>
         <LoginForm />
-        <br />
         <a href="" onClick={@register}>Create Account</a>
       </div>
     else if @state.form == 'register'
       <div>
         <RegisterForm />
-        <br />
         <a className="btn btn-default col-xs-12" href="" onClick={@login}>Cancel</a>
       </div>
 
