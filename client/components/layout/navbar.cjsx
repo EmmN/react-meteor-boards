@@ -17,12 +17,12 @@ ReactBoards.Navbar = ReactMeteor.createClass
   getMeteorState: ->
     userId: Meteor.userId()
 
-  componentDidMount: -> @renderMeteorLoginButtons()
+  # componentDidMount: -> @renderMeteorLoginButtons()
 
-  renderMeteorLoginButtons: ->
-    node = @getDOMNode()
-    Blaze.remove @MeteorLoginButtonsView if @MeteorLoginButtonsView
-    @MeteorLoginButtonsView = Blaze.render(Template._loginButtons, $(node).find(".loginButtons")[0])
+  # renderMeteorLoginButtons: ->
+  #   node = @getDOMNode()
+  #   Blaze.remove @MeteorLoginButtonsView if @MeteorLoginButtonsView
+  #   @MeteorLoginButtonsView = Blaze.render(Template._loginButtons, $(node).find(".loginButtons")[0])
 
   render: ->
     Navbar         = ReactBootstrap.Navbar
@@ -31,7 +31,8 @@ ReactBoards.Navbar = ReactMeteor.createClass
     CollapsableNav = ReactBootstrap.CollapsableNav
     MenuItem       = ReactBootstrap.MenuItem
 
-    NavLink        = ReactBoards.NavLink
+    NavLink      = ReactBoards.NavLink
+    LoginButtons = ReactBoards.LoginButtons
 
     <Navbar brand={<a target="_blank" href="https://github.com/EmmN/react-meteor-boards">React-Meteor-Boards</a>} fluid toggleNavKey={0}>
       <CollapsableNav eventKey={0}>
@@ -39,7 +40,9 @@ ReactBoards.Navbar = ReactMeteor.createClass
           <NavLink to="/">Home</NavLink>
           { <NavLink to="boards">Boards</NavLink> if Meteor.userId() }
         </Nav>
-        <ul className="nav navbar-nav navbar-right loginButtons" />
+        <ul className="nav navbar-nav navbar-right">
+          <LoginButtons />
+        </ul>
       </CollapsableNav>
     </Navbar>
 
